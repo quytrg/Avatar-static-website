@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js" integrity="sha512-i/6nAYMMwXZ3dTsq+ngdkSl4MbtVQF0FdCeqP5/1HSXPxyEd43vrxhafg1P4iqKRAnZVHn48GYaFUYRcTB0YrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <![endif]-->
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper-header wrapper">
+            <div class="header-brand">
+                <a class="header-brand__link" href="./">
+                    <img class="header-brand__logo" src="assets/images/avatar_nav_logo_c08aa297.png" alt="brand-logo-avatar">
+                </a>
+            </div>
+
+            <div class="wrapper-navbar-collapse">
+                <nav class="header-navbar">
+                    <ul class="header-navbar__ul">
+                        <li class="header-navbar__li ">
+                            <a href="index.html" class="header-navbar__link">Home</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="movie.html" class="header-navbar__link">Movies</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="shop.html" class="header-navbar__link">Shop</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="experiences.html" class="header-navbar__link">Experiences</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="partnerships.html" class="header-navbar__link">Partnerships</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="tel:9898790847" class="header-contact">Need help? 989-879-0847</a>
+    
+                <div class="header-icon">
+                    <ul class="header-icon__ul">
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <div class="shopping-cart">
+                                <p class="ordered-items">0</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- nav bars (sidebar) -->
+            <input type="checkbox" name="" id="navbars-onclick">
+
+            <label for="navbars-onclick" class="header-bars">
+                <img class="header-bars__button bars-button" src="https://static-mh.content.disney.io/matterhorn/assets/avatar/burger_dark-a11f5a917f0a.svg" alt="">
+                <img class="header-bars__button xmark-button" src="https://static-mh.content.disney.io/matterhorn/assets/avatar/burger_close_dark-4585f4d8ceec.svg" alt="">
+            </label>
+
+            <label for="navbars-onclick" class="header-bars-overlay wrapper"></label>
+
+            <nav class="nav-mobile">
+                <ul class="nav-mobile__ul">
+                    <li class="nav-mobile__li">
+                        <a href="index.html" class="nav-mobile__link">Home</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="movie.html" class="nav-mobile__link">Movies</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="shop.html" class="nav-mobile__link">Shop</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="experiences.html" class="nav-mobile__link">Experience</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="partnerships.html" class="nav-mobile__link">Partnerships</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end nav bars (sidebar) -->
+        </div>
+    </header>
+    <!----------------------------------------------------------------------------------->
+    <main style="background-color: var(--background-color);">
+        <section class="section-banner wrapper">
+            <div class="banner__image">
+                <img class="banner__image--content" src="assets/images/hb_avatardotcom_shop_slim_1309_f3f39203.jpeg" alt="banner-image-avatar">
+                <span class="banner__image--overlay"></span>
+            </div>
+            <div class="banner__text shop-banner__text">
+                <div class="banner__text--title">
+                    <img class="logo-banner" src="assets/images/pp_avatar_thewayofwater_logo_97_b382cbde.webp" alt="logo-banner">
+                    <img class="logo-banner-mobile" src="assets/images/pp_20cs_avatarthewayofwater_logo_1710_update_ee1fa3d7.webp" alt="logo-banner-mobile">
+                </div>
+                <p class="banner__text--description shop-banner__text--description">
+                    Check out the lastest Avatar: The Way of Water product.
+                </p>
+            </div>
+        </section>
+
+        <div class="content_text--title container" style="padding-top: 20px; background-color: var(--background-color);">
+            <h2><b>LICENSEES</b></h2>
+        </div>
+
+        <section class="section-article wrapper" style="padding-top: 1rem;">
+            <div class="article-container container">
+                <div class="row">
+                    <div class="article-box col-xl-4 col-lg-4 shop-item">
+                        <a href="art-of-avatar.html">
+                            <div class="article-box__img img-hover-zoom shop-image-wrapper">
+                                <img src="assets/images/cg_avatardotcom_shop_horizontal_1309_4_a2ce652f.jpeg" alt="" class="article-box__img--link shop-item__image">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content shop-item__info">
+                                <p class="shop-item__info--id" hidden>001</p>
+                                <p class="article-box__content--title shop-item__info--title">
+                                    Art of Avatar: The Way of Water
+                                </p>
+                                <p class="article-box__content--desc shop-item__info--price">
+                                    30$
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article-box col-xl-4 col-lg-4 shop-item">
+                        <a href="avatar-banshee-canvas.html">
+                            <div class="article-box__img img-hover-zoom shop-image-wrapper">
+                                <img src="assets/images/cg_avatardotcom_shop_horizontal_1309_5_e45f9d0f.jpeg" alt="" class="article-box__img--link shop-item__image">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content shop-item__info">
+                                <p class="shop-item__info--id" hidden>002</p>
+                                <p class="article-box__content--title shop-item__info--title">
+                                    Avatar Banshee Canvas
+                                </p>
+                                <p class="article-box__content--desc shop-item__info--price">
+                                    119$
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article-box col-xl-4 col-lg-4 shop-item">
+                        <a href="comic.html">
+                            <div class="article-box__img img-hover-zoom shop-image-wrapper">
+                                <img src="assets/images/cg_avatardotcom_shop_horizontal_1309_2_80f049bf.jpeg" alt="" class="article-box__img--link shop-item__image">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content shop-item__info">
+                                <p class="shop-item__info--id" hidden>003</p>
+                                <p class="article-box__content--title shop-item__info--title">
+                                    Avatar: The High Ground Volume 1
+                                </p>
+                                <p class="article-box__content--desc shop-item__info--price">
+                                    25$
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------------------------------------------------------------------------------>
+    <!-- Kdefy -->
+    <footer class="footer wrapper">
+        <div class="footer-content">
+            <p>FOLLOW AVATAR</p>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <img src="https://static-mh.content.disney.io/matterhorn/assets/avatar/utility/arrows/arrow-light-461d1fd697d0.svg" alt=""/>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Children's Online Privacy Policy</a></li>
+                    <li><a href="">Your California Privacy Rights</a></li>
+                    <li><a href="">Avatar at shopDisney</a></li>
+                    <li><a href="">Interest-Based Ads</a></li>
+                    <li><a href="">Do Not Sell My Personal Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p> 
+                &copy;2022 20th Century Studios. JAMES CAMERON'S AVATAR is a trademark of 20th Century Studios.<span class="normal1"> All Rights Reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        window.addEventListener('load', loadShoppingCart, false);
+    </script>
+</body>
+</html>

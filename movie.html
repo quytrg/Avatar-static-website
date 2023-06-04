@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js" integrity="sha512-i/6nAYMMwXZ3dTsq+ngdkSl4MbtVQF0FdCeqP5/1HSXPxyEd43vrxhafg1P4iqKRAnZVHn48GYaFUYRcTB0YrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <![endif]-->
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper-header wrapper">
+            <div class="header-brand">
+                <a class="header-brand__link" href="./">
+                    <img class="header-brand__logo" src="assets/images/avatar_nav_logo_c08aa297.png" alt="brand-logo-avatar">
+                </a>
+            </div>
+
+            <div class="wrapper-navbar-collapse">
+                <nav class="header-navbar">
+                    <ul class="header-navbar__ul">
+                        <li class="header-navbar__li ">
+                            <a href="index.html" class="header-navbar__link">Home</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="movie.html" class="header-navbar__link">Movies</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="shop.html" class="header-navbar__link">Shop</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="experiences.html" class="header-navbar__link">Experiences</a>
+                        </li>
+                        <li class="header-navbar__li">
+                            <a href="partnerships.html" class="header-navbar__link">Partnerships</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="tel:9898790847" class="header-contact">Need help? 989-879-0847</a>
+    
+                <div class="header-icon">
+                    <ul class="header-icon__ul">
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="header-icon__li">
+                            <a class="iconfon-wrap" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- nav bars (sidebar) -->
+            <input type="checkbox" name="" id="navbars-onclick">
+
+            <label for="navbars-onclick" class="header-bars">
+                <img class="header-bars__button bars-button" src="https://static-mh.content.disney.io/matterhorn/assets/avatar/burger_dark-a11f5a917f0a.svg" alt="">
+                <img class="header-bars__button xmark-button" src="https://static-mh.content.disney.io/matterhorn/assets/avatar/burger_close_dark-4585f4d8ceec.svg" alt="">
+            </label>
+
+            <label for="navbars-onclick" class="header-bars-overlay wrapper"></label>
+
+            <nav class="nav-mobile">
+                <ul class="nav-mobile__ul">
+                    <li class="nav-mobile__li">
+                        <a href="index.html" class="nav-mobile__link">Home</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="movie.html" class="nav-mobile__link">Movies</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="" class="nav-mobile__link">Shop</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="" class="nav-mobile__link">About</a>
+                    </li>
+                    <li class="nav-mobile__li">
+                        <a href="" class="nav-mobile__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end nav bars (sidebar) -->
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-banner wrapper">
+            <div class="banner__image">
+                <img class="banner__image--content" src="assets/images/hb_thewayofwater_97_v2_c5acfc3c.jpeg" alt="banner-image-avatar">
+                <span class="banner__image--overlay"></span>
+            </div>
+            <div class="banner__text">
+                <div class="banner__text--title">
+                    <img class="logo-banner" src="assets/images/pp_avatar_thewayofwater_logo_97_b382cbde.webp" alt="logo-banner">
+                    <img class="logo-banner-mobile" src="assets/images/pp_20cs_avatarthewayofwater_logo_1710_update_ee1fa3d7.webp" alt="logo-banner-mobile">
+                </div>
+                <p class="banner__text--description">
+                    Experience the movie of a generation.
+                    <br>
+                    See the global phenomenon in 3D, now playing in theaters.
+                    <br>
+                    <br>
+                    Watch <i>Avatar: The Way of Water</i> at home, only on Digital.
+                </p>
+                <div class="banner__text--button">
+                    <div class="button-item button">
+                        <a href="">GET TICKETS</a>
+                    </div>
+                    <div class="button-item button">
+                        <a href="https://youtu.be/o5F8MOz_IDw" target="_blank">WATCH TRAILER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ------------------------------------------ -->
+
+        <!-- quote -->
+        <section class="section-intro wrapper">
+            <div class="intro-container">
+                <div class="container__poster">
+                    <div class="poster-img">
+                        <img src="assets/images/p_20cs_avatarwayofwater_1710_4025feea.webp" alt="">
+                    </div>
+                    <div class="poster-title">
+                        <div class="title__column-one">
+                            <h1 class="title-cap">Avatar: The Way Of Water</h1>
+                            <div class="title-meta">
+                                <p>
+                                    <b>Rating</b>: PG-13 <br>
+                                    <b>Release Date</b>: December 16, 2022 <br>
+                                    <b>Genre</b>: Adventure
+                                </p>
+                            </div>
+                            <div class="title-desc">
+                                <p>
+                                    "Avatar: The Way of Water" reaches new heights and explores undiscovered depths as James Cameron returns to the world of Pandora in this emotionally packed action adventure. 
+                                    Set more than a decade after the events of the first film, "Avatar: The Way of Water" launches the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure. 
+                                    All of this against the breathtaking backdrop of Pandora, where audiences are introduced to new Na’vi cultures and a range of exotic sea creatures that populate the majestic oceans. Nominated for numerous Academy Awards® including Best Picture, the James Cameron-directed film became the third highest-grossing box office film of all-time and set a new benchmark for visual effects. 
+                                    Produced by Cameron and his longtime partner Jon Landau, the Lightstorm Entertainment production stars Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Cliff Curtis and Kate Winslet. Joining the illustrious adult cast are talented newcomers Britain Dalton, Jamie Flatters, Trinity Jo-Li Bliss, Bailey Bass and Jack Champion.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="title__column-two">
+
+                            <div class="column-two_image">
+                                <div class="column-two_img">
+                                    <img class="img_1" src="assets/images/PG13.webp" alt="" >
+                                </div>
+                                <div class="column-two_img">
+                                    <img class="img_2" src="assets/images/lightstrom.png" width="100px" alt="" >
+                                </div>
+                                <div class="column-two_img">
+                                    <img class="img_3" src="assets/images/20century.webp" alt=""  >
+                                </div>
+                            </div>
+                            
+                            <div class="column-two_paragh">
+                                <b>DIRECTED BY</b> <br>
+                                James Cameron <br><br>
+                                <b>PRODUCED BY</b> <br>
+                                James Cameron, Jon Landau <br> <br>
+                                <b>CAST</b> <br>
+                                Zoe Saldana, Sam Worthington, Sigourney, Weaver, Stephen Lang, 
+                                Cliff Curtis, Joel David Moore, CCH Pounder, Edie Falco, Jemaine Clement, Kata Winslet <br> <br>
+                                <b>AWARDS</b> <br>
+                                <ul>
+                                    <li>Nominee - 2023 Academy Award for Best Picture</li>
+                                    <li>Nominee - 2023 Academy Award for Production Design</li>
+                                    <li>Nominee - 2023 Academy Award for Sound</li>
+                                    <li>Winner - 2023 Academy Award for Visual Effects</li>
+                                </ul> <br>
+                                <div class="paragh_link">
+                                    <a href="https://www.motionpictures.org">
+                                        <b>MOTIONPICTURES.ORG</b>
+                                    </a>
+                                    <br>
+                                    <a href="https://www.motionpictures.org">
+                                        <b>FILMRATINGS.COM</b>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="section-line wrapper">
+            <div class="line_text">
+                <h1 class="title-cap">PARTNERS:</h1>
+            </div>
+            <div class="line_image">
+                <div>
+                    <img src="assets/images/cpu.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/kellog.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/ox.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/nyx.webp" alt="">
+                </div>
+            </div>
+       </section>
+
+
+       <section class="section-performer section-gl wrapper ">
+            <div class="performer_text  content_text--title">
+                <h2><b>AVATAR: THE WAY OF WATER CAST AND CHARACTERS</b></h2>
+            </div>
+            <div class="performer_intro ">
+                <div class="performer_intro-first">
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/jake_sully.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Jake Sully</b> <br>
+                            <p>Sam Worthington</p>    
+                        </div>
+                    </div>
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/neytiri.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Neytiri</b> <br>
+                            <p>Zoe Saldana</p>
+                        </div>
+                    </div>
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/weaver.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Sigourney Weaver</b> <br>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/lang.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Stephen Lang</b> <br>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/ronal.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Ronal</b> <br>
+                            <p>Kate Winslet</p>
+                        </div>
+                    </div>
+                    <div class="intro-first__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/tono.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Tonowari</b> <br>
+                            <p>Cliff Curtis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="performer_intro-second">
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/adr.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>General Frances Ardmore</b> <br>
+                            <p>Edie Falco</p>
+                        </div>
+                    </div>
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/garvin.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Dr.lan Garvin</b> <br>
+                            <p>Jemaine Clement</p>
+                        </div>
+                    </div>
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/mick.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Mick Scoresby</b> <br>
+                            <p>Brendan Cowell</p>
+                        </div>
+                    </div>
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/spider.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Spider</b> <br>
+                            <p>Jack Champion</p>
+                        </div>
+                    </div>
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/netey.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Neteyam</b> <br>
+                            <p>Jamie Flatters</p>
+                        </div>
+                    </div>
+                    <div class="intro-second__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/lo.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Lo'al</b> <br>
+                            <p>Britain Dalton</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="performer_intro-third">
+                    <div class="intro-third__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/tuk.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Tuktiney</b> <br>
+                            <p>Trinity Bliss</p>
+                        </div>
+                    </div>
+                    <div class="intro-third__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/tsi.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Tsireya</b> <br>
+                            <p>Bailey Bass</p>
+                        </div>
+                    </div>
+                    <div class="intro-third__card">
+                        <div class="intro__card-img">
+                            <img src="assets/images/ao.webp" alt="">
+                        </div>
+                        <div class="intro__card-text">
+                            <b>Aonung</b> <br>
+                            <p>Filip Geljo</p>
+                        </div>
+                    </div>
+                    <!--  justify-content: space-between; -->
+                    <div class="intro-third__card1">
+                    </div>
+                    <div class="intro-third__card1">
+                    </div>
+                    <div class="intro-third__card1">
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <!-- ------------------------------------------------ -->
+        <!-- Qiqinè -->
+        <section class="section-content wrapper section-gl">
+            <div class="content_text">
+                <!-- lastest news -->
+                <div class="content_text--title">
+                    <h2><b>LATEST NEWS</b></h2>
+                </div>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+        
+                                    <div class="card-image">
+                                        <a href="https://www.avatar.com/dive-into-new-avatar-the-way-of-water-concept-art">
+                                            <img src="assets/images/cover11.jpeg" alt="" class="card-img">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="card-content">
+                                    <a href="https://www.avatar.com/dive-into-new-avatar-the-way-of-water-concept-art" style="text-decoration: none;">
+                                        <h6 class="name">
+                                            <b>SIGOURNEY WEAVER AS KIRI GRACES THE SUBCRIBER-EXCLUSIVE COVER OF EMPIRE MAGAZINE</b>
+                                        </h6>
+                                    </a>
+                                    
+                                    <p class="description">Sigourney Weaver plays Jake and Neytiri's adopted teenage Na'vi daughter in Avatar 2. 
+                                        Experience Avatar: The Way of Water only in theaters December 16.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+        
+                                    <div class="card-image">
+                                        <a href="https://www.avatar.com/avatar-pandorapedia">
+                                            <img src="assets/images/cover12.jpeg" alt="" class="card-img">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="card-content">
+                                    <a href="https://www.avatar.com/avatar-pandorapedia" style="text-decoration: none;">
+                                        <h6 class="name">
+                                            <b>EMPIRE'S WORLD-EXCLUSIVE AVATAR: THE WAY OF WATER COVER REVEALED</b>
+                                        </h6>
+                                    </a>
+                                    
+                                    <p class="description">The news stand cover of Empire Magazine for Avatar: The Way of Water is here. Experience it only in theaters December 16.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+        
+                                    <div class="card-image">
+                                        <a href="https://d23.com/disney-twenty-three-journeys-to-pandora-going-behind-the-scenes-of-the-next-level-storytelling-of-avatar-the-way-of-water/">
+                                            <img src="assets/images/cover13.webp" alt="" class="card-img">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="card-content">
+                                    <a href="https://d23.com/disney-twenty-three-journeys-to-pandora-going-behind-the-scenes-of-the-next-level-storytelling-of-avatar-the-way-of-water/" style="text-decoration: none;">
+                                        <h6 class="name">
+                                            <b>AVATAR: THE WAY OF WATER</b>
+                                        </h6>
+                                    </a>
+                                    
+                                    <p class="description">
+                                        We officially have a title!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+        
+                                    <div class="card-image">
+                                        <a href="https://www.avatar.com/avatar-and-mcfarlane-toys-go-big-at-d23-expo">
+                                            <img src="assets/images/df-avatar_spider_1250x680_00fe491e.webp" alt="" class="card-img" >
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="card-content">
+                                    <a href="https://www.avatar.com/avatar-and-mcfarlane-toys-go-big-at-d23-expo" style="text-decoration: none;">
+                                        <h6 class="name">
+                                            <b>AVATAR 2: MEET SPIDER, JAKE AND NEYTIRI'S ADOPTED HUMAN SON</b>
+                                        </h6>
+                                    </a>
+                                    
+                                    <p class="description">
+                                        A lot has changed on Pandora in the 13-year gap between Avatar and Avatar 2 (arriving in 2022).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="section-slide wrapper section-gl">
+            <div class="slide_text">
+                <h2><b>MOVIE IMAGE GALLERY</b></h2>
+            </div>
+            <div class="swiper movieSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt1.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt2.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt3.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt4.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt5.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt6.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt7.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt8.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt9.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt10.webp" alt="">
+                  </div>
+                </div>
+
+                <div class="movie-pagination"></div>
+
+              </div>        
+        </section>   
+
+        <section class="section-article movie-section-article-has-background-image section-gl wrapper">
+            <div class="article-text">
+                <h2><b>CONTINUE EXPLORING</b></h2>
+            </div>
+            <div class="article-container">
+                <div class="row">
+                    <div class="article-box col-xl-4 col-lg-4">
+                        <a href="">
+                            <div class="article-box__img img-hover-zoom">
+                                <img src="assets/images/bg1.webp" alt="" class="article-box__img--link">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content">
+                                <p class="article-box__content--title">
+                                    TSU'TEY'S PATH
+                                </p>
+                                <p class="article-box__content--desc">
+                                    <i>Tsu'tey proud warrior to the Omatikaya clan, betrothed to Neyteri, has his life turned...</i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article-box col-xl-4 col-lg-4">
+                        <a href="">
+                            <div class="article-box__img img-hover-zoom">
+                                <img src="assets/images/a1.webp" alt="" class="article-box__img--link">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content">
+                                <p class="article-box__content--title">
+                                    PANDORA: THE WORLD OF AVATAR
+                                </p>
+                                <p class="article-box__content--desc">
+                                    Discover a Beautiful Land That Celebrates the Magic of Nature
+                                </p>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="article-box col-xl-4 col-lg-4">
+                        <a href="">
+                            <div class="article-box__img img-hover-zoom">
+                                <img src="assets/images/bg10.jpg" alt="" class="article-box__img--link">
+                                <div class="article-box__img--overlay"></div>
+                            </div>
+                            <div class="article-box__content">
+                                <p class="article-box__content--title">
+                                    AVATAR: RECKONING
+                                </p>
+                                <p class="article-box__content--desc">
+                                    Coming soon - a new mobile MMO set on Pandora from Archosaur Games and Level Infinite.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- ------------------------------------------------------------- -->
+    <!-- Kdefy -->
+    <footer class="footer wrapper">
+        <div class="footer-content">
+            <p>FOLLOW AVATAR</p>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <img src="https://static-mh.content.disney.io/matterhorn/assets/avatar/utility/arrows/arrow-light-461d1fd697d0.svg" alt=""/>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Children's Online Privacy Policy</a></li>
+                    <li><a href="">Your California Privacy Rights</a></li>
+                    <li><a href="">Avatar at shopDisney</a></li>
+                    <li><a href="">Interest-Based Ads</a></li>
+                    <li><a href="">Do Not Sell My Personal Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p> 
+                &copy;2022 20th Century Studios. JAMES CAMERON'S AVATAR is a trademark of 20th Century Studios.<span class="normal1"> All Rights Reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
